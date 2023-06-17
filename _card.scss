@@ -1,0 +1,97 @@
+// DEFAULT CARD
+.card {
+    flex-direction: column;
+    display: flex;
+    min-height: 400px;
+    width: 100%;
+    background-color: map-get($map: $primary-color, $key: dark);
+    border-radius: 12px;
+    font-family: $font-family;
+
+    .content {
+        padding: 16px 24px;
+    }
+
+    .image {
+        display: flex;
+        border-radius: 12px 12px 0px 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        flex-grow: 1;
+
+        .image-overlay {
+            position: relative;
+            z-index: 0;
+            display: flex;
+            justify-content: right;
+            flex: 1;
+            width: 100%;
+            opacity: 0;
+            color: rgb(255, 255, 255);
+        
+            border-radius: 12px 12px 0px 0px;
+            background: linear-gradient(180deg, rgba(25,33,64,1) 0%, rgba(231,231,255,0.18181818508979186) 100%);
+        }
+
+        .fa-circle-xmark {
+            position: relative;
+            right: 10px;
+            top: 10px;
+        }
+
+        div {
+            min-height: 100%;
+        }
+    
+        .image-overlay:hover {
+            opacity: 8;
+        }
+    }
+
+    .title {
+        font-weight: 700;
+        font-size: $card-title-font-size;
+    }
+
+    hr, .details {
+        color: grey;
+    }
+
+    .details {
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 300;
+
+        .date {
+            padding: 5px 15px;
+            border: solid 0.4px grey;
+            border-radius: 999px;
+        }
+
+        .hearts {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 5px;
+        }
+        
+        .hearts i {
+            position: relative;
+        }
+
+    }
+
+    hr {
+        margin-top: 14px;
+        margin-bottom: 14px;
+        border: solid;
+        border-width: 0.4px 0px 0px;
+    }
+
+}

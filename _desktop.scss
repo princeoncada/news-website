@@ -1,0 +1,107 @@
+//DESKTOP
+@media only screen and (min-width: 600px) {
+    body {
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .header {
+        font-family: $font-family;
+        align-items: center;
+        justify-content: space-around;
+        min-height: 84px;
+        font-size: 16px;
+        padding: 0px;
+
+        .logo {
+            color: $secondary-color;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .header-links {
+            display: flex;
+            flex-direction: row;
+            gap: 56px;
+            
+            .link {
+                text-decoration: none;
+                color: white;
+            }
+
+            .link:hover {
+                color: $secondary-color;
+            }
+        }
+
+        .user-auth {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 40px;
+
+            .sign-up, .login {
+                text-decoration: none;
+            }
+
+            .sign-up {
+                color: #9d9db5;
+            }
+
+            .login {
+                border: 1px solid $teritiary-color;
+                border-radius: 2rem;
+                padding: 10px 18px;
+                color: $teritiary-color;
+            }
+        }
+
+        .icon-container {
+            display: none;
+        }
+
+        .sidebar {
+            display: none;
+        }
+    }
+    
+    .center {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        flex: 0 0 30%;
+    }
+
+    .footer {
+        display: grid;
+        padding: 60px 80px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 40px;
+
+        .footer-content:nth-child(1){
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        .footer-content:nth-child(3){
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+
+        .footer-content:nth-child(2){
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        .footer-content:nth-child(4){
+            display: flex;
+            justify-content: right;
+            align-items: end;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+// DEFAULT CENTER
+.center {
+    display: flex;
+    background-color: map-get($map: $primary-color, $key: light);
+    margin: 36px 16px;
+    height: 100%;
+    gap: 24px;
+}

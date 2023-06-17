@@ -1,0 +1,114 @@
+// MOBILE
+@media only screen and (max-width: 600px) {
+    
+    // HEADER STUFF
+    .header {
+        justify-content: space-between;
+        align-items: end;
+        min-height: 84px;
+        padding: 0px 20px 20px;
+        font-size: $header-font-size;
+        font-weight: 700;
+    
+        .logo {
+            color: $secondary-color;
+            font-family:  $font-family;
+        }
+
+        .spacer {
+            display: none;
+        }
+    
+        .icon-container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+
+            .menu {
+                display: none;
+            }
+        }
+
+        .header-links {
+            display: none;
+        }
+
+        .user-auth {
+            display: none;
+        }
+
+        .sidebar {
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            background-color: $background-color;
+            position: absolute;
+            gap: 10px;
+            top: 0px;
+            left: 0px;
+            padding-top: 49.5px;
+            padding-bottom: 24px;
+            width: 100%;
+            font-family: $font-family;
+            font-weight: 300;
+            z-index: 1;
+            
+            a {
+                font-size: 24px;
+                margin-left: 24px;
+                color: white;
+                text-decoration: none;
+            }
+
+            .link:hover {
+                color: $secondary-color;
+            }
+
+            .side-user-auth {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-top: 24px;
+
+                a {
+                    font-size: 21.5px;
+                }
+
+                .sign-up {
+                    color: #9d9db5;
+                }
+    
+                .login {
+                    border: 1px solid $teritiary-color;
+                    border-radius: 2rem;
+                    padding: 10px 18px;
+                    color: $teritiary-color;
+                }
+            }
+        }
+        
+        .icon-container:has(input:checked) + .sidebar {
+            transform: translateY(0%);
+        }
+    }
+    // HEADER STUFF
+
+    // CENTER STUFF
+    .center {
+        flex-direction: column;
+    }
+    // CENTER STUFF
+
+    // FOOTER STUFF
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 32px 20px 54px;
+        gap: 32px;
+        background-color: $footer-background-color;
+        font-family: $font-family;
+    }
+}

@@ -1,0 +1,63 @@
+// FOOTER STUFF
+.footer {
+    background-color: $footer-background-color;
+    font-family: $font-family;
+
+    .footer-content .heading {
+        font-size: $footer-headings-font-size;
+        font-weight: 700;
+        color: white;
+    }
+}
+
+.links {
+    display: flex;
+    line-height: 16px;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 16px;
+
+    a {
+        font-weight: 300;
+        font-size: $footer-text-links-font-size;
+        text-decoration: none;
+        color: $accent-color;
+    }
+}
+
+.socmed {
+    .socmed-heading {
+        color: grey;
+        font-size: $footer-final-details-font-size;
+    }
+
+    .socmed-links {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin-top: 16px;
+    }
+
+    .socmed-links a{
+        color: rgba(245, 245, 245, 0.879);
+    }
+}
+
+.footer-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 16px;
+
+    .detail-content a{
+        color: grey;
+        text-decoration: none;
+        font-size: $footer-final-details-font-size;
+    }
+}
+
+.inactive {
+    pointer-events: none;
+    cursor: default;
+ }
+ // FOOTER STUFF

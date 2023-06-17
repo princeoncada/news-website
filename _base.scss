@@ -1,0 +1,40 @@
+$primary-color: (
+    "light": #ffffff,
+    "dark": #f8f9fc,
+    "darker": #c0bfcf,
+    "grey": #9d9db5
+);
+
+$background-color: #192140;
+$footer-background-color: #10131c;
+$accent-color: #d7f8ff;
+$secondary-color: #dcf10d;
+$teritiary-color: #0266ff;
+
+$font-family: 'Inter', sans-serif;
+
+$mobile: 414px;
+
+$header-font-size: 36px;
+$card-title-font-size: 20px;
+$footer-headings-font-size: 24px;
+$footer-text-links-font-size: 16px;
+$footer-final-details-font-size: 16px;
+
+*, *::after, *::before {
+    transition: ease all .1s;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+    background-color: $footer-background-color;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
